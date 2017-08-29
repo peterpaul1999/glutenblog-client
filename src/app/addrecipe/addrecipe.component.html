@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Rezept hinzufügen</h1>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+        </div>
+        <div class="panel-body">
+            <form name="form" (ngSubmit)="create()" #f="ngForm">
+                <div class="form-group">
+                    <label for="quotename">Name</label>
+                    <input type="text" class="form-control" name="quotename" [(ngModel)]="model.name" #quotename="ngModel"/>
+                </div>
+                <div class="form-group">
+                    <label for="quotequote">Quote</label>
+                    <input type="text" class="form-control" name="quotequote" [(ngModel)]="model.quote" #quotequote="ngModel" required />
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">Add Quote</button>
+                </div>
+            </form>    
+        </div>
+    </div>
+</div>

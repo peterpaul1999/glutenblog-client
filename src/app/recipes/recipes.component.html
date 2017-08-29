@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Rezeptübersicht</h1>
+  <div class="panel panel-default">
+      <div class="panel-heading">
+      </div>
+      <div class="panel-body">
+        <div class="row" *ngFor="let recipe of recipes">
+          <div class="card card-block">
+            <h4 class="card-title">{{ recipe.name }}</h4>
+            <p class="card-text">{{recipe.quote}}</p>
+          </div>
+        </div>
+      </div>
+  </div>        
+</div>
