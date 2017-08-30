@@ -10,13 +10,15 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { routing } from './app.routing';
 import { AddrecipeComponent } from './addrecipe/addrecipe.component';
 import { NavComponent } from './nav/nav.component';
+import { UpdaterecipeComponent } from './updaterecipe/updaterecipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RecipesComponent,
     AddrecipeComponent,
-    NavComponent
+    NavComponent,
+    UpdaterecipeComponent
   ],
   imports: [
     BrowserModule,

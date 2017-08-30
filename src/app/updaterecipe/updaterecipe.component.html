@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Rezept ändern</h1>
+  <h2>{{id}}</h2>
+  <div class="panel panel-default">
+      <div class="panel-heading">
+      </div>
+      <div class="panel-body">
+          <form name="form" (ngSubmit)="update()" #f="ngForm">
+              <div class="form-group">
+                  <label for="quotename">Name</label>
+                  <input type="text" class="form-control" name="quotename" [(ngModel)]="recipe.name" #quotename="ngModel"/>
+              </div>
+              <div class="form-group">
+                  <label for="quotequote">Quote</label>
+                  <input type="text" class="form-control" name="quotequote" [(ngModel)]="recipe.quote" #quotequote="ngModel" required />
+              </div>
+              <div class="form-group">
+                  <button class="btn btn-primary">Update</button>
+              </div>
+          </form>    
+      </div>
+  </div>
+</div>
+
