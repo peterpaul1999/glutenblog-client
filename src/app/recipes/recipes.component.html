@@ -8,6 +8,7 @@
           <div class="card card-block">
             <h4 class="card-title">{{ recipe.name }}</h4>
             <p class="card-text">{{recipe.quote}}</p>
+            <p><a (click)="deleteRecipe(recipe._id)">Delete</a></p>
           </div>
         </div>
       </div>

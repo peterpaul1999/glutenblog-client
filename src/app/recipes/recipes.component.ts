@@ -14,6 +14,14 @@ export class RecipesComponent implements OnInit {
   constructor(private recipeService: RecipeService ) { }
 
   ngOnInit() {
+    this.loadAllRecipes()
+  }
+
+  deleteRecipe(_id: string) {
+    this.recipeService.delete(_id).subscribe(() => { this.loadAllRecipes() });
+  }
+
+  loadAllRecipes() {
     this.recipeService.getAllRecipes().subscribe(recipes => {
       this.recipes = recipes;
     });
