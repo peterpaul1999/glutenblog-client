@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { RecipeService } from '../services/recipe.service';
 import { Recipe } from '../models/recipe';
 
@@ -12,7 +13,7 @@ export class AddrecipeComponent {
   //model: any = {};
   model: Recipe = new Recipe()
 
-  constructor(private recipeService: RecipeService) { }
+  constructor(private recipeService: RecipeService, private router: Router) { }
 
   create() {
     this.recipeService.createRecipe(this.model).subscribe(
@@ -20,6 +21,7 @@ export class AddrecipeComponent {
         //this.alertService.success('Registration successful', true);
         //this.router.navigate(['/login']);
         console.log("Recipe successful added")
+        this.router.navigate(['/recipes']);
     },
     error => {
         //this.alertService.error(error);
