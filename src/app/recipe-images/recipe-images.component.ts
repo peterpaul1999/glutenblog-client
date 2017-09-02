@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {  FileUploader } from 'ng2-file-upload/ng2-file-upload';
 import { appConfig } from '../app.config';
 
-const URL = appConfig.apiUrl + 'files/upload';
+const URL = appConfig.apiUrl + '/files/upload';
 
 @Component({
   selector: 'app-recipe-images',
