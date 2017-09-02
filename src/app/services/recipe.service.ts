@@ -8,7 +8,7 @@ import { appConfig } from '../app.config';
 @Injectable()
 export class RecipeService {
 
-  recipesUrl = appConfig.apiUrl + '/recipes'
+  recipesUrl = appConfig.apiUrl + '/recipes/'
 
   constructor(private http: Http) { }
   
@@ -24,11 +24,11 @@ export class RecipeService {
       console.log("Reszept:")
       console.log(recipe)
       //this.http.head('http://localhost:4000/recipes/create')
-      return this.http.post(this.recipesUrl + '/create', recipe);
+      return this.http.post(this.recipesUrl + 'create', recipe);
     }
 
     updateRecipe(recipe: Recipe) {
-      return this.http.put(this.recipesUrl + '/update/' + recipe._id, recipe);
+      return this.http.put(this.recipesUrl + 'update/' + recipe._id, recipe);
     }
 
   delete(_id: string) {
