@@ -12,6 +12,7 @@ import { AddrecipeComponent } from './addrecipe/addrecipe.component';
 import { NavComponent } from './nav/nav.component';
 import { UpdaterecipeComponent } from './updaterecipe/updaterecipe.component';
 import { FileSelectDirective } from 'ng2-file-upload';
+import { RecipeImagesComponent } from './recipe-images/recipe-images.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FileSelectDirective } from 'ng2-file-upload';
     AddrecipeComponent,
     NavComponent,
     UpdaterecipeComponent,
-    FileSelectDirective
+    FileSelectDirective,
+    RecipeImagesComponent
   ],
   imports: [
     BrowserModule,
