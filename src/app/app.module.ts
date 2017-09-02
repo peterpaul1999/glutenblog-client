@@ -11,6 +11,7 @@ import { routing } from './app.routing';
 import { AddrecipeComponent } from './addrecipe/addrecipe.component';
 import { NavComponent } from './nav/nav.component';
 import { UpdaterecipeComponent } from './updaterecipe/updaterecipe.component';
+import { FileSelectDirective } from 'ng2-file-upload';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UpdaterecipeComponent } from './updaterecipe/updaterecipe.component';
     RecipesComponent,
     AddrecipeComponent,
     NavComponent,
-    UpdaterecipeComponent
+    UpdaterecipeComponent,
+    FileSelectDirective
   ],
   imports: [
     BrowserModule,
