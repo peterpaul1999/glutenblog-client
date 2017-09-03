@@ -10,6 +10,18 @@
                     <input type="text" class="form-control" name="quotename" [(ngModel)]="model.name" #quotename="ngModel"/>
                 </div>
                 <div class="form-group">
+                    <label for="desc">Beschreibung</label>
+                    <textarea rows="3" class="form-control" name="desc" [(ngModel)]="model.description" #desc="ngModel"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="prep">Vorbereitung</label>
+                    <textarea rows="3" class="form-control" name="prep" [(ngModel)]="model.preperation" #prep="ngModel"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="number">Anzahl</label>
+                    <input type="text" maxlength="2" class="form-control" name="number" [(ngModel)]="model.numberOfServings" #number="ngModel"/>
+                </div>
+                <div class="form-group">
                     <label for="quotequote">Quote</label>
                     <input type="text" class="form-control" name="quotequote" [(ngModel)]="model.quote" #quotequote="ngModel" required />
                 </div>
