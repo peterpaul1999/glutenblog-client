@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { RecipeService } from './services/recipe.service';
+import { CategoryService } from './services/category.service';
 import { AppComponent } from './app.component';
 import { RecipesComponent } from './recipes/recipes.component';
 
@@ -13,6 +14,8 @@ import { NavComponent } from './nav/nav.component';
 import { UpdaterecipeComponent } from './updaterecipe/updaterecipe.component';
 import { FileSelectDirective } from 'ng2-file-upload';
 import { RecipeImagesComponent } from './recipe-images/recipe-images.component';
+import { AddCategoryComponent } from './add-category/add-category.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { RecipeImagesComponent } from './recipe-images/recipe-images.component';
     NavComponent,
     UpdaterecipeComponent,
     FileSelectDirective,
-    RecipeImagesComponent
+    RecipeImagesComponent,
+    AddCategoryComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,10 @@ import { RecipeImagesComponent } from './recipe-images/recipe-images.component';
     FormsModule,
     routing
   ],
-  providers: [RecipeService],
+  providers: [
+    RecipeService,
+    CategoryService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
