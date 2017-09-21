@@ -6,6 +6,7 @@ import { UpdaterecipeComponent } from './updaterecipe/updaterecipe.component';
 import { RecipeImagesComponent } from './recipe-images/recipe-images.component';
 import { AddCategoryComponent } from './add-category/add-category.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { UpdateCategoryComponent } from './update-category/update-category.component';
 
 const appRoutes: Routes = [
    { path: '', redirectTo: 'recipes', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const appRoutes: Routes = [
    { path: 'recipes/upload', component: RecipeImagesComponent },
    { path: 'categories/add', component: AddCategoryComponent },
    { path: 'categories', component: CategoriesComponent },
+   { path: 'categories/update/:id', component: UpdateCategoryComponent},
 
    // otherwise redirect to home
    { path: '**', redirectTo: '' }

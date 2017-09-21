@@ -16,6 +16,7 @@ import { FileSelectDirective } from 'ng2-file-upload';
 import { RecipeImagesComponent } from './recipe-images/recipe-images.component';
 import { AddCategoryComponent } from './add-category/add-category.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { UpdateCategoryComponent } from './update-category/update-category.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CategoriesComponent } from './categories/categories.component';
     FileSelectDirective,
     RecipeImagesComponent,
     AddCategoryComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    UpdateCategoryComponent
   ],
   imports: [
     BrowserModule,
